@@ -1,6 +1,10 @@
 import os
 from flask import Flask, render_template, jsonify, request
 from twilio.rest import Client
+from dotenv import load_dotenv
+
+# Load secure environment variables from .env
+load_dotenv()
 
 app = Flask(__name__)
 
