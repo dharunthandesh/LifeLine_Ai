@@ -1,0 +1,16 @@
+{
+  "name": "LifeLine AI",
+  "short_name": "LifeLine",
+  "description": "Silent Emergency Detection System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3208/3208726.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

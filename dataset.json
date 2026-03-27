@@ -1,0 +1,422 @@
+[
+  {
+    "phrase": "help me",
+    "language": "English",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["help"]
+  },
+  {
+    "phrase": "I can't breathe",
+    "language": "English",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["can't", "breathe"]
+  },
+  {
+    "phrase": "I feel chest pain",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["chest", "pain"]
+  },
+  {
+    "phrase": "call an ambulance",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["call", "ambulance"]
+  },
+  {
+    "phrase": "I'm dizzy",
+    "language": "English",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["dizzy"]
+  },
+  {
+    "phrase": "I need a doctor",
+    "language": "English",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["need", "doctor"]
+  },
+  {
+    "phrase": "someone help",
+    "language": "English",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["someone", "help"]
+  },
+  {
+    "phrase": "I think I'm having a heart attack",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["heart", "attack"]
+  },
+  {
+    "phrase": "my chest hurts so much",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["chest", "hurts"]
+  },
+  {
+    "phrase": "I fell and can't get up",
+    "language": "English",
+    "category": "fall",
+    "severity": "high",
+    "keywords": ["fell", "can't", "up"]
+  },
+  {
+    "phrase": "I am bleeding heavily",
+    "language": "English",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["bleeding", "heavily"]
+  },
+  {
+    "phrase": "please call 911",
+    "language": "English",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["call", "911"]
+  },
+  {
+    "phrase": "I'm about to faint",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["faint"]
+  },
+  {
+    "phrase": "help someone is breaking in",
+    "language": "English",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["help", "breaking"]
+  },
+  {
+    "phrase": "I've been injured",
+    "language": "English",
+    "category": "injury",
+    "severity": "medium",
+    "keywords": ["injured"]
+  },
+  {
+    "phrase": "I can't move my leg",
+    "language": "English",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["can't", "move", "leg"]
+  },
+  {
+    "phrase": "I'm trapped",
+    "language": "English",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["trapped"]
+  },
+  {
+    "phrase": "my head is spinning",
+    "language": "English",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["head", "spinning"]
+  },
+  {
+    "phrase": "I've cut myself badly",
+    "language": "English",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["cut", "badly"]
+  },
+  {
+    "phrase": "breathing is getting hard",
+    "language": "English",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["breathing", "hard"]
+  },
+  {
+    "phrase": "I slipped and fell down the stairs",
+    "language": "English",
+    "category": "fall",
+    "severity": "high",
+    "keywords": ["slipped", "fell", "stairs"]
+  },
+  {
+    "phrase": "help I've been mugged",
+    "language": "English",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["help", "mugged"]
+  },
+  {
+    "phrase": "I am passing out",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["passing", "out"]
+  },
+  {
+    "phrase": "I need medical attention now",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["medical", "attention"]
+  },
+  {
+    "phrase": "send an ambulance to my location",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["ambulance", "location"]
+  },
+  {
+    "phrase": "I'm having strong chest pains",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["chest", "pains"]
+  },
+  {
+    "phrase": "help I am choking",
+    "language": "English",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["help", "choking"]
+  },
+  {
+    "phrase": "get me to a hospital",
+    "language": "English",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["hospital"]
+  },
+  {
+    "phrase": "I hit my head really hard",
+    "language": "English",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["hit", "head", "hard"]
+  },
+  {
+    "phrase": "there is a fire please help",
+    "language": "English",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["fire", "help"]
+  },
+  {
+    "phrase": "help pannunga",
+    "language": "Tanglish",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["help", "pannunga"]
+  },
+  {
+    "phrase": "enakku bayama irukku",
+    "language": "Tanglish",
+    "category": "panic",
+    "severity": "medium",
+    "keywords": ["bayama", "irukku"]
+  },
+  {
+    "phrase": "suvasa varala",
+    "language": "Tanglish",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["suvasa", "varala"]
+  },
+  {
+    "phrase": "udambu romba kastama irukku",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["udambu", "kastama"]
+  },
+  {
+    "phrase": "naan vizhunduten",
+    "language": "Tanglish",
+    "category": "fall",
+    "severity": "medium",
+    "keywords": ["vizhunduten"]
+  },
+  {
+    "phrase": "ambulance ku call pannunga",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["ambulance", "call"]
+  },
+  {
+    "phrase": "nenju valikuthu",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["nenju", "valikuthu"]
+  },
+  {
+    "phrase": "moochu thinarala irukku",
+    "language": "Tanglish",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["moochu", "thinarala"]
+  },
+  {
+    "phrase": "enakku mayakkama varuthu",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["mayakkama", "varuthu"]
+  },
+  {
+    "phrase": "ratham varuthu",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["ratham", "varuthu"]
+  },
+  {
+    "phrase": "yaraachum kaapathunga",
+    "language": "Tanglish",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["kaapathunga"]
+  },
+  {
+    "phrase": "enakku heart attack varra madhiri irukku",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["heart", "attack"]
+  },
+  {
+    "phrase": "kela vilundhuten thooka mudiyala",
+    "language": "Tanglish",
+    "category": "fall",
+    "severity": "high",
+    "keywords": ["vilundhuten", "thooka", "mudiyala"]
+  },
+  {
+    "phrase": "kaal nagatha mudiyala",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "medium",
+    "keywords": ["kaal", "nagatha"]
+  },
+  {
+    "phrase": "thirudan ulla vandhuttan",
+    "language": "Tanglish",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["thirudan", "vandhuttan"]
+  },
+  {
+    "phrase": "enaku moochu vida kastama irukku",
+    "language": "Tanglish",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["moochu", "kastama"]
+  },
+  {
+    "phrase": "kathi kuthittanga",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["kathi", "kuthittanga"]
+  },
+  {
+    "phrase": "adi pattuduchu",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "medium",
+    "keywords": ["adi", "pattuduchu"]
+  },
+  {
+    "phrase": "enakku chest pain irukku",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["chest", "pain"]
+  },
+  {
+    "phrase": "enna kapathunga please",
+    "language": "Tanglish",
+    "category": "general",
+    "severity": "high",
+    "keywords": ["kapathunga", "please"]
+  },
+  {
+    "phrase": "romba ratham poguthu",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["ratham", "poguthu"]
+  },
+  {
+    "phrase": "thala suthuthu",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["thala", "suthuthu"]
+  },
+  {
+    "phrase": "yevano pinnaliye varan",
+    "language": "Tanglish",
+    "category": "panic",
+    "severity": "medium",
+    "keywords": ["pinnaliye", "varan"]
+  },
+  {
+    "phrase": "vali thanga mudiyala",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["vali", "thanga", "mudiyala"]
+  },
+  {
+    "phrase": "doctor kitta kondu ponga",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["doctor", "kondu", "ponga"]
+  },
+  {
+    "phrase": "hospital ku poga num",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "medium",
+    "keywords": ["hospital", "poga"]
+  },
+  {
+    "phrase": "udambu mudiyala udane doctor venum",
+    "language": "Tanglish",
+    "category": "medical",
+    "severity": "high",
+    "keywords": ["udambu", "doctor", "venum"]
+  },
+  {
+    "phrase": "police ku phone pannunga",
+    "language": "Tanglish",
+    "category": "panic",
+    "severity": "high",
+    "keywords": ["police", "phone"]
+  },
+  {
+    "phrase": "thondaila maatikkichu",
+    "language": "Tanglish",
+    "category": "breathing",
+    "severity": "high",
+    "keywords": ["thondaila", "maatikkichu"]
+  },
+  {
+    "phrase": "vandi accident aaiduchu",
+    "language": "Tanglish",
+    "category": "injury",
+    "severity": "high",
+    "keywords": ["accident", "aaiduchu"]
+  }
+]

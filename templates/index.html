@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2563EB">
+    <meta name="description" content="LifeLine AI – Silent Emergency Detection System with inactivity monitoring and 3-step safety prompts.">
+    <title>LifeLine AI - Silent Emergency Detection</title>
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h1>LifeLine AI</h1>
+            </div>
+            <p class="subtitle">Silent Emergency Detection System</p>
+        </header>
+
+        <!-- Status Badge -->
+        <section class="status-section">
+            <div id="status-badge" class="badge badge-safe">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>SAFE</span>
+            </div>
+        </section>
+
+        <!-- Main Controls -->
+        <section class="controls-section">
+            <button id="btn-voice" class="btn btn-primary">
+                <i class="fa-solid fa-microphone"></i> Start Voice Detection
+            </button>
+            <button id="btn-simulate" class="btn btn-warning">
+                <i class="fa-solid fa-triangle-exclamation"></i> Simulate Inactivity
+            </button>
+            <button id="btn-safe" class="btn btn-success hidden">
+                <i class="fa-solid fa-check-circle"></i> I'm Safe (Cancel)
+            </button>
+        </section>
+
+        <!-- Voice Recognition Status -->
+        <div id="voice-status" class="voice-status hidden">
+            <div class="recording-indicator">
+                <span class="pulse-dot"></span> Listening for keywords...
+            </div>
+            <p class="transcript-box">Say "help", "pain", or "can't breathe"</p>
+            <p id="transcript-text" class="transcript-text">...</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             ALERT / PROMPT BOX
+             Shown during CHECKING state. Holds all 3 prompt steps.
+        ═══════════════════════════════════════════════════════════ -->
+        <section id="alert-box" class="alert-box hidden">
+            <div class="alert-content">
+
+                <!-- Step Label -->
+                <p id="prompt-step-label" class="prompt-step-label">STEP 1 OF 3</p>
+
+                <!-- Icon -->
+                <i id="alert-icon" class="fa-solid fa-circle-question alert-icon"></i>
+
+                <!-- Prompt Message -->
+                <h2 id="prompt-text">Hey, are you okay?</h2>
+
+                <!-- Countdown display -->
+                <div id="countdown-container" class="countdown-container hidden">
+                    <span id="countdown-timer">20</span>
+                    <span id="countdown-label" class="countdown-label">seconds remaining</span>
+                </div>
+
+                <!-- I'm Safe button — lives INSIDE the alert box -->
+                <button id="alert-safe-btn" class="btn btn-success alert-safe-btn hidden">
+                    <i class="fa-solid fa-hand"></i> I'm Safe
+                </button>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             EMERGENCY OVERLAY
+             Shown during EMERGENCY state.
+        ═══════════════════════════════════════════════════════════ -->
+        <div id="emergency-overlay" class="emergency-overlay hidden">
+            <div class="emergency-modal">
+
+                <div class="emergency-icon-container">
+                    <i class="fa-solid fa-tower-broadcast flashing"></i>
+                </div>
+
+                <h2 id="emergency-title">Emergency Detected</h2>
+
+                <!-- 10-second countdown before "Sending Alert..." -->
+                <div id="emergency-countdown-wrap" class="emergency-countdown-wrap">
+                    <span id="emergency-countdown" class="emergency-countdown-num">10</span>
+                    <span class="emergency-countdown-suffix">s</span>
+                </div>
+
+                <!-- Location status chip -->
+                <p id="location-status" class="location-status">
+                    <i class="fa-solid fa-location-dot fa-spin"></i> Fetching location...
+                </p>
+
+                <p id="emergency-subtitle" class="emergency-subtitle"></p>
+
+                <!-- Cancel button — only visible during countdown -->
+                <button id="btn-cancel-emergency" class="btn btn-cancel-emg">
+                    <i class="fa-solid fa-xmark"></i> Cancel — I'm Safe
+                </button>
+
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+
+                <ul class="emergency-actions">
+                    <li><i class="fa-solid fa-check text-green"></i> Connecting to Emergency Services...</li>
+                    <li id="action-sms"><i class="fa-solid fa-check text-green"></i> Sending SMS to Emergency Contacts...</li>
+                    <li id="action-loc"><i class="fa-solid fa-check text-green"></i> Broadcasting Live Location...</li>
+                </ul>
+
+                <button id="btn-reset" class="btn btn-primary mt-4 hidden">
+                    <i class="fa-solid fa-rotate-left"></i> Reset System
+                </button>
+
+            </div>
+        </div>
+
+    </div><!-- /.dashboard-container -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
